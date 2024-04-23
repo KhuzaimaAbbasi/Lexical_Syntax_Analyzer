@@ -1,0 +1,19 @@
+SELECT orders.id, users.name
+FROM orders
+INNER JOIN users
+ON orders.user_id = users.id;
+
+SELECT employees.id, employees.name, orders.id AS order_id
+FROM employees
+LEFT OUTER JOIN orders
+ON employees.id = orders.employees.id;
+
+
+SELECT *
+FROM orders
+WHERE name LIKE '%book%' AND name NOT LIKE '%textbook%';
+
+
+SELECT *
+FROM orders
+WHERE user_id IN (1, 2, 3);

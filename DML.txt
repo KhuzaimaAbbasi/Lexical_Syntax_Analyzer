@@ -1,0 +1,12 @@
+SELECT * FROM employees 
+WHERE salary > 50000;
+
+
+DELETE FROM orders
+WHERE salary>1000;
+
+
+
+UPDATE employees
+SET salary = 60000
+WHERE id = 1234;
